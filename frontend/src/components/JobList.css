@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+.jl-wrapper {
+  font-family: 'DM Mono', 'Fira Mono', 'Courier New', monospace;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.jl-header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.jl-heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #0f172a;
+}
+
+.jl-count {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+.jl-meta {
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+.jl-meta--error {
+  color: #dc2626;
+}
+
+.jl-scroll {
+  overflow-x: auto;
+}
+
+.jl-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.jl-th {
+  text-align: left;
+  padding: 6px 12px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #94a3b8;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.jl-row {
+  border-left: 3px solid transparent;
+  transition: background 0.15s;
+}
+
+.jl-row:hover {
+  background: #f8fafc;
+}
+
+.jl-td {
+  padding: 10px 12px;
+  color: #1e293b;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+}
+
+/* date column — monospaced so dates scan in a column without jumping */
+.jl-td--mono {
+  font-family: monospace;
+  font-size: 0.82rem;
+  color: #64748b;
+}
+
+.jl-td--icon {
+  width: 36px;
+}
+
+.jl-td--action {
+  width: 80px;
+}
+
+.jl-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  font-family: inherit;
+  white-space: nowrap;
+}
+
+.jl-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.jl-link:hover {
+  text-decoration: underline;
+}
+
+.jl-empty {
+  color: #cbd5e1;
+}
+
+.jl-icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #94a3b8;
+  font-size: 0.65rem;
+  padding: 2px 4px;
+  font-family: inherit;
+}
+
+.jl-icon-btn:hover {
+  color: #475569;
+}
+
+.jl-delete-btn {
+  background: none;
+  border: 1px solid #fca5a5;
+  border-radius: 4px;
+  color: #dc2626;
+  font-size: 0.72rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 3px 10px;
+  letter-spacing: 0.04em;
+  transition: background 0.1s;
+  font-family: inherit;
+}
+
+.jl-delete-btn:hover:not(:disabled) {
+  background: #fef2f2;
+}
+
+.jl-delete-btn--deleting {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.jl-row-error {
+  color: #dc2626;
+  font-size: 0.7rem;
+  display: block;
+  margin-top: 2px;
+}
+
+.jl-detail-row {
+  background: #f8fafc;
+  border-left: 3px solid transparent;
+}
+
+.jl-detail-cell {
+  padding: 10px 16px 14px 20px;
+}
+
+.jl-detail-block {
+  /* empty — used as a layout wrapper; gap modifier adds separation */
+}
+
+.jl-detail-block--gap {
+  margin-bottom: 10px;
+}
+
+.jl-detail-label {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #94a3b8;
+  margin-bottom: 4px;
+}
+
+.jl-detail-text {
+  margin: 0;
+  font-size: 0.82rem;
+  color: #475569;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}

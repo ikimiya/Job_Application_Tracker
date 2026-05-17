@@ -1,4 +1,4 @@
-from pydantic import BaseModel, field_validator
+from pydantic import BaseModel, Field, field_validator
 from typing import Optional, Any
 from datetime import date
 import re
@@ -30,13 +30,14 @@ def _validate_status(v: Optional[str]) -> Optional[str]:
 class JobCreate(BaseModel):
     model_config = {"json_schema_extra": {"title": "JobCreate"}}
 
-    company:         str
-    role:            str
-    date_applied:    str                       # YYYY-MM-DD; validated below
-    status:          Optional[str] = "applied"
-    job_description: Optional[str] = None
-    website:         Optional[str] = None
-    notes:           Optional[str] = None
+    company: str = Field(example="Google")
+    role: str = Field(example="Software Engineer")
+    date_applied: str = Field(example="2026-05-17")
+    status: Optional[str] = Field(default="applied", example="applied")
+    job_description: Optional[str] = Field(default=None,
+                                           example="Build and maintain web applications using React and Python.")
+    website: Optional[str] = Field(default=None, example="https://careers.google.com")
+    notes: Optional[str] = Field(default=None, example="Referral from a friend. Follow up in 2 weeks.")
 
     @field_validator("company", "role")
     @classmethod
