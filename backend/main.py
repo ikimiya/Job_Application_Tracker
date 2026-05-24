@@ -26,6 +26,14 @@ app.add_middleware(
 @app.get("/jobs")
 def get_jobs(db: Session = Depends(get_db)):
     return db.query(Job).all()
+
+@app.get("/jobs/{job_id}")
+def get_jobs(job_id: int, db: Session = Depends(get_db)):
+    job = db.query(Job).filter(Job.id == job_id).first()
+    if not job:
+        raise HTTPException(status_code=404, detail=f"Job with id {job_id} not found")
+    return job
+
 @app.post("/jobs", response_model=JobResponse, status_code=201)
 def create_job(payload: JobCreate, db: Session = Depends(get_db)):
     job = Job(
