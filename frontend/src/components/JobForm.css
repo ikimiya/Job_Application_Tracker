@@ -1,0 +1,161 @@
+.jf-form {
+    font-family: 'DM Sans', sans-serif;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 28px 24px 32px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.jf-heading {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: #0f172a;
+    margin-bottom: 20px;
+}
+
+.jf-row {
+    display: flex;
+    gap: 16px;
+}
+
+.jf-row--2col > .jf-field {
+    flex: 1;
+}
+
+.jf-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 14px;
+}
+
+.jf-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #64748b;
+}
+
+.jf-required {
+    color: #2563eb;
+    margin-left: 2px;
+}
+
+.jf-input,
+.jf-select,
+.jf-textarea {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.875rem;
+    color: #0f172a;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 8px 11px;
+    transition: border-color 0.15s, box-shadow 0.15s;
+    outline: none;
+    width: 100%;
+}
+
+.jf-input::placeholder,
+.jf-textarea::placeholder {
+    color: #94a3b8;
+}
+
+.jf-input:focus,
+.jf-select:focus,
+.jf-textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px #2563eb18;
+}
+
+/* monospaced for date so the placeholder format reads clearly */
+.jf-input--mono {
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 0.04em;
+}
+
+.jf-input--error {
+    border-color: #dc2626;
+}
+
+.jf-input--error:focus {
+    border-color: #dc2626;
+    box-shadow: 0 0 0 3px #dc262618;
+}
+
+.jf-select {
+    appearance: none;
+    /* custom caret so the select matches the design language */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2394a3b8' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.jf-textarea {
+    resize: vertical;
+    min-height: 80px;
+    line-height: 1.5;
+}
+
+.jf-field-error {
+    font-size: 0.72rem;
+    color: #dc2626;
+    margin-top: 1px;
+}
+
+.jf-submit-error {
+    font-size: 0.8rem;
+    color: #dc2626;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-bottom: 14px;
+}
+
+.jf-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.jf-submit {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #2563eb;
+    border: none;
+    border-radius: 6px;
+    padding: 9px 22px;
+    cursor: pointer;
+    transition: background 0.15s, opacity 0.15s;
+}
+
+.jf-submit:hover:not(:disabled) {
+    background: #1d4ed8;
+}
+
+.jf-submit:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+/* collapse 2-col rows to single column on narrow viewports */
+@media (max-width: 560px) {
+    .jf-row--2col {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    cursor: pointer;
+    filter: invert(0.4);
+}

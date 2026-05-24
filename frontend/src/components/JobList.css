@@ -1,194 +1,407 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap');
 
 .jl-wrapper {
-  font-family: 'DM Mono', 'Fira Mono', 'Courier New', monospace;
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 32px 24px;
+    font-family: 'DM Mono', 'Fira Mono', 'Courier New', monospace;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 24px;
 }
 
 .jl-header {
-  display: flex;
-  align-items: baseline;
-  gap: 12px;
-  margin-bottom: 20px;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 20px;
 }
 
 .jl-heading {
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  color: #0f172a;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: #0f172a;
 }
 
 .jl-count {
-  font-size: 0.75rem;
-  color: #94a3b8;
+    font-size: 0.75rem;
+    color: #94a3b8;
 }
 
 .jl-meta {
-  color: #94a3b8;
-  font-size: 0.85rem;
+    color: #94a3b8;
+    font-size: 0.85rem;
 }
 
 .jl-meta--error {
-  color: #dc2626;
+    color: #dc2626;
 }
 
 .jl-scroll {
-  overflow-x: auto;
+    overflow-x: auto;
 }
 
 .jl-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.85rem;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
 }
 
 .jl-th {
-  text-align: left;
-  padding: 6px 12px;
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #94a3b8;
-  border-bottom: 2px solid #e2e8f0;
+    text-align: center;
+    padding: 6px 12px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #94a3b8;
+    border-bottom: 2px solid #e2e8f0;
+    white-space: nowrap;
+
 }
 
 .jl-row {
-  border-left: 3px solid transparent;
-  transition: background 0.15s;
+    border-left: 3px solid transparent;
+    transition: background 0.15s;
 }
 
 .jl-row:hover {
-  background: #f8fafc;
+    background: #f8fafc;
 }
 
 .jl-td {
-  padding: 10px 12px;
-  color: #1e293b;
-  border-bottom: 1px solid #f1f5f9;
-  vertical-align: middle;
+    padding: 10px 12px;
+    color: #1e293b;
+    border-bottom: 1px solid #f1f5f9;
+    vertical-align: middle;
 }
 
 /* date column — monospaced so dates scan in a column without jumping */
 .jl-td--mono {
-  font-family: monospace;
-  font-size: 0.82rem;
-  color: #64748b;
+    font-family: monospace;
+    font-size: 0.82rem;
+    color: #64748b;
 }
 
 .jl-td--icon {
-  width: 36px;
+    width: 36px;
 }
 
 .jl-td--action {
-  width: 80px;
+    width: 80px;
 }
 
 .jl-badge {
-  display: inline-block;
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 2px 8px;
-  border-radius: 4px;
-  border: 1px solid transparent;
-  font-family: inherit;
-  white-space: nowrap;
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    font-family: inherit;
+    white-space: nowrap;
 }
 
 .jl-link {
-  color: #2563eb;
-  text-decoration: none;
-  font-size: 0.8rem;
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 0.8rem;
 }
 
 .jl-link:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .jl-empty {
-  color: #cbd5e1;
+    color: #cbd5e1;
 }
 
 .jl-icon-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #94a3b8;
-  font-size: 0.65rem;
-  padding: 2px 4px;
-  font-family: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #94a3b8;
+    font-size: 0.65rem;
+    padding: 2px 4px;
+    font-family: inherit;
 }
 
 .jl-icon-btn:hover {
-  color: #475569;
+    color: #475569;
 }
 
 .jl-delete-btn {
-  background: none;
-  border: 1px solid #fca5a5;
-  border-radius: 4px;
-  color: #dc2626;
-  font-size: 0.72rem;
-  font-weight: 600;
-  cursor: pointer;
-  padding: 3px 10px;
-  letter-spacing: 0.04em;
-  transition: background 0.1s;
-  font-family: inherit;
+    background: none;
+    border: 1px solid #fca5a5;
+    border-radius: 4px;
+    color: #dc2626;
+    font-size: 0.72rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 3px 10px;
+    letter-spacing: 0.04em;
+    transition: background 0.1s;
+    font-family: inherit;
 }
 
 .jl-delete-btn:hover:not(:disabled) {
-  background: #fef2f2;
+    background: #fef2f2;
 }
 
 .jl-delete-btn--deleting {
-  opacity: 0.5;
-  cursor: not-allowed;
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 .jl-row-error {
-  color: #dc2626;
-  font-size: 0.7rem;
-  display: block;
-  margin-top: 2px;
+    color: #dc2626;
+    font-size: 0.7rem;
+    display: block;
+    margin-top: 2px;
 }
 
 .jl-detail-row {
-  background: #f8fafc;
-  border-left: 3px solid transparent;
+    background: #f8fafc;
+    border-left: 3px solid transparent;
 }
 
 .jl-detail-cell {
-  padding: 10px 16px 14px 20px;
+    padding: 10px 16px 14px 20px;
 }
 
 .jl-detail-block {
-  /* empty — used as a layout wrapper; gap modifier adds separation */
+    /* empty — used as a layout wrapper; gap modifier adds separation */
 }
 
 .jl-detail-block--gap {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .jl-detail-label {
-  display: block;
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #94a3b8;
-  margin-bottom: 4px;
+    display: block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #94a3b8;
+    margin-bottom: 4px;
 }
 
 .jl-detail-text {
-  margin: 0;
-  font-size: 0.82rem;
-  color: #475569;
-  line-height: 1.6;
-  white-space: pre-wrap;
+    margin: 0;
+    font-size: 0.82rem;
+    color: #475569;
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+/* tab strip */
+.jl-tabs {
+    display: flex;
+    gap: 2px;
+    border-bottom: 2px solid #e2e8f0;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+    flex-direction: row;
+}
+
+.jl-tabs::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+
+
+.jl-tab {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-family: inherit;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #94a3b8;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    /* pulls the active border flush over the strip's border-bottom */
+    margin-bottom: -2px;
+    padding: 8px 14px 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: color 0.15s;
+}
+
+.jl-tab:hover:not(.jl-tab--active) {
+    color: #475569;
+}
+
+.jl-tab--active {
+    font-weight: 700;
+}
+
+.jl-tab-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.65rem;
+    font-weight: 700;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 5px;
+    border-radius: 9px;
+    line-height: 1;
+}
+
+/* Edit button — sits left of Delete in the actions cell */
+.jl-td--actions {
+    width: 120px;
+    white-space: nowrap;
+}
+
+.jl-edit-btn {
+    background: none;
+    border: 1px solid #93c5fd;
+    border-radius: 4px;
+    color: #2563eb;
+    font-size: 0.72rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 3px 10px;
+    letter-spacing: 0.04em;
+    margin-right: 6px;
+    transition: background 0.1s;
+    font-family: inherit;
+}
+
+.jl-edit-btn:hover {
+    background: #eff6ff;
+}
+
+
+/* inline status select — styled to match the badge palette without a visible border at rest */
+.jl-status-select {
+    font-family: inherit;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 2px 22px 2px 7px;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Cpath fill='%2394a3b8' d='M5 7L1 3h8z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+    background-color: #f8fafc;
+    color: #475569;
+    transition: border-color 0.15s;
+}
+
+.jl-status-select:focus {
+    border-color: #2563eb;
+}
+
+.jl-status-select:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* sortable column headers */
+.jl-th--sortable {
+    cursor: pointer;
+    user-select: none;
+}
+
+.jl-th--sortable:hover {
+    color: #475569;
+}
+
+.jl-th--active {
+    color: #0f172a;
+}
+
+.jl-sort-arrow {
+    font-size: 0.6rem;
+    opacity: 0.5;
+}
+
+.jl-th--active .jl-sort-arrow {
+    opacity: 1;
+}
+
+
+/* delete confirmation inline row */
+.jl-confirm-row {
+    background: #fff7ed;
+    border-left: 3px solid #f97316;
+}
+
+.jl-confirm-cell {
+    padding: 20px 14px;
+    text-align: center;
+}
+
+.jl-confirm-msg {
+    font-size: 0.9rem;
+    color: #92400e;
+}
+
+.jl-confirm-yes {
+    font-family: inherit;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    background: #dc2626;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 12px;
+    cursor: pointer;
+    transition: background 0.1s;
+    white-space: nowrap;
+}
+
+.jl-confirm-yes:hover:not(:disabled) {
+    background: #b91c1c;
+}
+
+.jl-confirm-yes:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.jl-confirm-no {
+    font-family: inherit;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: #64748b;
+    background: none;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    padding: 4px 12px;
+    cursor: pointer;
+    transition: background 0.1s;
+    white-space: nowrap;
+
+}
+
+.jl-confirm-no:hover {
+    background: #f1f5f9;
+}
+
+.jl-confirm-block {
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 24px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    background: #fff7ed;
+    border-left: 3px solid #f97316;
 }
