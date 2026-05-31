@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./JobForm.css";
+import API from "../config.js";
 
-const API = "http://localhost:8000";
 
 const STATUSES = ["applied", "interview", "offer", "rejected", "ghosted"];
 

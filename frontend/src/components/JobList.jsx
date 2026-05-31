@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./JobList.css";
+import API from "../config.js";
 
-const API = "http://localhost:8000";
 
 const TABS = ["All", "Applied", "Interview", "Offer", "Rejected", "Ghosted"];
 

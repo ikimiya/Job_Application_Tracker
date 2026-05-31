@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./Analytics.css";
+import API from "../config.js";
 
-const API = "http://localhost:8000";
 
 const STATUS_ORDER = ["applied", "interview", "offer", "rejected", "ghosted"];
 
