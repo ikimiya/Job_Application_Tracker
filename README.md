@@ -4,6 +4,12 @@ A full-stack job application tracker built to manage and monitor job application
 
 ---
 
+## Live Demo
+- **App:** [ https://job-application-tracker-roan.vercel.app](https://job-application-tracker-roan.vercel.app/)
+- **API Docs:** [https://job-application-tracker-xzsr.onrender.com/docs](https://job-application-tracker-xzsr.onrender.com/docs)
+
+> Backend is hosted on Render free tier and may take time to load first time
+
 ## Tech Stack
 
 **Backend:** Python, FastAPI, SQLAlchemy, Pydantic, SQLite  
