@@ -18,7 +18,8 @@ app = FastAPI(title="Job Application Tracker", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # Vite default dev port
+    allow_origins=["http://localhost:5173",
+                   "https://job-application-tracker-roan.vercel.app" ],
     allow_methods=["*"],
     allow_headers=["*"],
 )
